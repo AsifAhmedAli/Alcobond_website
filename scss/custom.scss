@@ -527,13 +527,61 @@ header {
 .sub-finish {
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  position: relative;
+  @media screen and (min-width: 1600px){
+    height: 100vh;
+    
+  }
+  &#sub-mettalic{
+    background: url('../images/finishes/sub-mettalic-bg.png') no-repeat top center;
+    background-size: cover;
+  }
+  &#sub-solid{
+    background: url('../images/finishes/sub-solid-bg.png') no-repeat top 25% left;
+    background-size: cover;
+  }
+  &#sub-textured{
+    background: url('../images/finishes/sub-textured-bg.png') no-repeat left center;
+    background-size: cover;
+  }
+  &#sub-brush{
+    background: url('../images/finishes/sub-brush-bg.png') no-repeat left center;
+    background-size: cover;
+  }
+  &#sub-anodized{
+    background: url('../images/finishes/sub-anodized-bg.png') no-repeat left center;
+    background-size: cover;
+  }
+  &#sub-rock{
+    background: url('../images/finishes/sub-rock-bg.png') no-repeat left center;
+    background-size: cover;
+  }
+  &#sub-woodgrain{
+    background: url('../images/finishes/sub-woodgrain-bg.png') no-repeat left center;
+    background-size: cover;
+  }
   .sub-title {
     text-transform: uppercase;
     font-size: 60px;
     font-family: GalaxiePolarisBold;
     margin-bottom: 52px;
+    color: white;
     @media screen and (max-width: 996.67px) {
       font-size: 24px;
+    }
+  }
+  @media screen and (min-width: 1600px){
+    height: 100vh;
+    .sub-title{
+      font-size: 220px;
+      opacity: 46%;
+      position: absolute;
+      left: -4px;
+      bottom: -5%;
+      color: white;
+      margin-bottom: 0;
     }
   }
   .sub {
@@ -548,6 +596,7 @@ header {
       font-size: 15px;
       font-family: GalaxiePolarisMedium;
       text-transform: uppercase;
+      color: white;
     }
   }
 }
