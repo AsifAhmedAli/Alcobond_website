@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="gray"></div>
-    <header class="top">
+    <header>
       <div class="container-fluid">
         <nav
           class="navbar navbar-expand-xxl navbar-light bg-transparent my-nav"
@@ -40,10 +40,16 @@
                   <a class="nav-link" href="./products.html">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./finishes.html">Finishes</a>
+                  <a class="nav-link active" href="./finishes.html">Finishes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="./projects.html">Projects</a>
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectsModal"
+                  >
+                    Projects
+                  </button>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./technical_data.html"
@@ -110,6 +116,101 @@
       </div>
     </main>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="projectsModal"
+      tabindex="-1"
+      aria-labelledby="projectsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content bg-black">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectsModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="productsCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-number">01 <sup>/03</sup></div>
+                  <img
+                    src="./assets/images/home/1. Movenpick.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-block">
+                    <h5 class="title">PRODUCT: ALCOBOND® A2</h5>
+                    <h6 class="product">PROJECT: SAMIA BY AZIZI</h6>
+                    <p class="location">LOCATION: DUBAI, UAE</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-number">02 <sup>/03</sup></div>
+                  <img
+                    src="./assets/images/home/2. KuwaitPavilion.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-block">
+                    <h5 class="title">KUWAIT PAVILION</h5>
+                    <h6 class="product">PRODUCT: ALCOBOND - A2</h6>
+                    <p class="location">EXPO 2020, DUBAI</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-number">03 <sup>/03</sup></div>
+                  <img
+                    src="./assets/images/home/3. Al Dhaid Expo.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-block">
+                    <h5 class="title">EXPO AL DHAID</h5>
+                    <h6 class="product">PRODUCT: ALCOBOND - A2</h6>
+                    <p class="location">SHARJAH</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#productsCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#productsCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

@@ -50,6 +50,8 @@ header {
   .navbar-nav {
     > .nav-item {
       > .nav-link {
+        background-color: transparent;
+        border: none;
         font-family: GalaxiePolarisMedium;
         font-size: 17px;
         text-transform: uppercase;
@@ -278,7 +280,7 @@ header {
       height: 100%;
       width: 100%;
     }
-    img{
+    img {
       width: 100%;
       object-fit: cover;
     }
@@ -301,12 +303,12 @@ header {
       }
     }
   }
-  
+
   @media screen and (max-width: 996.67px) {
     flex-wrap: wrap;
-    .building{
+    .building {
       max-width: 50%;
-      img{
+      img {
         max-height: 600px;
       }
     }
@@ -314,9 +316,9 @@ header {
 
   @media screen and (max-width: 576px) {
     flex-wrap: wrap;
-    .building{
+    .building {
       max-width: 100%;
-      img{
+      img {
         max-height: 600px;
       }
     }
@@ -530,36 +532,40 @@ header {
   padding-left: 60px;
   padding-right: 60px;
   position: relative;
-  @media screen and (min-width: 1600px){
+  @media screen and (min-width: 1600px) {
     height: 100vh;
-    
   }
-  &#sub-mettalic{
-    background: url('../images/finishes/sub-mettalic-bg.png') no-repeat top center;
+  &#sub-mettalic {
+    background: url("../images/finishes/sub-mettalic-bg.png") no-repeat top
+      center;
     background-size: cover;
   }
-  &#sub-solid{
-    background: url('../images/finishes/sub-solid-bg.png') no-repeat top 25% left;
+  &#sub-solid {
+    background: url("../images/finishes/sub-solid-bg.png") no-repeat top 25%
+      left;
     background-size: cover;
   }
-  &#sub-textured{
-    background: url('../images/finishes/sub-textured-bg.png') no-repeat left center;
+  &#sub-textured {
+    background: url("../images/finishes/sub-textured-bg.png") no-repeat left
+      center;
     background-size: cover;
   }
-  &#sub-brush{
-    background: url('../images/finishes/sub-brush-bg.png') no-repeat left center;
+  &#sub-brush {
+    background: url("../images/finishes/sub-brush-bg.png") no-repeat left center;
     background-size: cover;
   }
-  &#sub-anodized{
-    background: url('../images/finishes/sub-anodized-bg.png') no-repeat left center;
+  &#sub-anodized {
+    background: url("../images/finishes/sub-anodized-bg.png") no-repeat left
+      center;
     background-size: cover;
   }
-  &#sub-rock{
-    background: url('../images/finishes/sub-rock-bg.png') no-repeat left center;
+  &#sub-rock {
+    background: url("../images/finishes/sub-rock-bg.png") no-repeat left center;
     background-size: cover;
   }
-  &#sub-woodgrain{
-    background: url('../images/finishes/sub-woodgrain-bg.png') no-repeat left center;
+  &#sub-woodgrain {
+    background: url("../images/finishes/sub-woodgrain-bg.png") no-repeat left
+      center;
     background-size: cover;
   }
   .sub-title {
@@ -572,9 +578,9 @@ header {
       font-size: 24px;
     }
   }
-  @media screen and (min-width: 1600px){
+  @media screen and (min-width: 1600px) {
     height: 100vh;
-    .sub-title{
+    .sub-title {
       font-size: 220px;
       opacity: 46%;
       position: absolute;
@@ -1148,5 +1154,50 @@ header {
     padding-right: 0 !important;
     padding-top: 24px !important;
     padding-bottom: 24px !important;
+  }
+}
+
+#productsCarousel {
+  .carousel-inner {
+    .carousel-item {
+      position: relative;
+      .carousel-caption{
+        padding: 0;
+        position: absolute;
+        text-align: left;
+        left: 100%;
+        transform: translateX(-100%);
+        width: 100%;
+        bottom: 0;
+        max-width: 190px;
+        *{
+          font-size: 16px;
+          color: #ff7800;
+          font-family: "Barlow", sans-serif;
+          font-weight: 900;
+        }
+      }
+      img {
+        max-width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 488px;
+        max-height: 488px;
+        object-fit: contain;
+      }
+    }
+  }
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80.471' height='71.679' viewBox='0 0 80.471 71.679'%3E%3Cg id='right' transform='translate(-7771.882 -525.454)' opacity='0.5'%3E%3Cpath id='Path_123' data-name='Path 123' d='M7790.972,597.133l-19.09-19.09,16.75-16.749-16.75-16.749,19.09-19.091,35.839,35.84Zm-6.321-19.09,6.321,6.321,23.071-23.07-23.071-23.071-6.321,6.322,16.75,16.749Z' fill='%23fff'/%3E%3Cpath id='Path_124' data-name='Path 124' d='M7816.513,597.133l-19.09-19.09,16.749-16.749-16.749-16.749,19.09-19.091,35.84,35.84Zm-6.322-19.09,6.322,6.321,23.071-23.07-23.071-23.071-6.322,6.322,16.75,16.749Z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+  }
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80.471' height='71.679' viewBox='0 0 80.471 71.679'%3E%3Cg id='left' transform='translate(-6397.338 -525.454)' opacity='0.5'%3E%3Cpath id='Path_125' data-name='Path 125' d='M6458.718,525.454l19.091,19.091-16.75,16.749,16.75,16.749-19.091,19.09-35.838-35.839Zm6.322,19.091-6.322-6.322-23.07,23.071,23.07,23.071,6.322-6.322-16.75-16.749Z' fill='%23fff'/%3E%3Cpath id='Path_126' data-name='Path 126' d='M6433.178,525.454l19.09,19.091-16.75,16.749,16.75,16.749-19.09,19.09-35.84-35.839Zm6.321,19.091-6.321-6.322-23.072,23.071,23.072,23.071,6.321-6.322-16.75-16.749Z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+  }
+}
+
+#projectsModal {
+  .btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='43.588' height='43.587' viewBox='0 0 43.588 43.587'%3E%3Cg id='cross' transform='translate(-1833.921 -37.83)'%3E%3Cpath id='Path_127' data-name='Path 127' d='M8023.971,81.417a21.793,21.793,0,1,1,21.794-21.794A21.818,21.818,0,0,1,8023.971,81.417Zm0-41.506a19.712,19.712,0,1,0,19.713,19.713A19.735,19.735,0,0,0,8023.971,39.911Z' transform='translate(-6168.256)' fill='%23fff'/%3E%3Cpath id='Path_128' data-name='Path 128' d='M8034.306,53.151l-3.253-3.253-7.07,7.07-7.07-7.07-3.253,3.253,7.07,7.07-7.07,7.07,3.253,3.253,7.07-7.07,7.07,7.07,3.253-3.253-7.07-7.07Z' transform='translate(-6168.256)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
   }
 }
