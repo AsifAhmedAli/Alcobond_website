@@ -1008,6 +1008,7 @@ header {
         width: 100%;
         height: auto;
         display: block;
+        padding: 1rem;
       }
     }
     .carousel-control-prev-icon,
@@ -1031,12 +1032,15 @@ header {
     .carousel-caption {
       left: 0;
       right: 0;
-      bottom: -34px;
+      bottom: -24px;
       width: 100%;
       h5 {
         font-size: 2vw;
         font-family: GalaxiePolarisBold;
         color: #ff7800;
+        &.type2{
+          font-size: 20px;
+        }
       }
       @media screen and (max-width: 1366px) {
         bottom: -30px;

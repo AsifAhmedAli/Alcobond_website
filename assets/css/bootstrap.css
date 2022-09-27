@@ -11037,6 +11037,7 @@ header.top {
   width: 100%;
   height: auto;
   display: block;
+  padding: 1rem;
 }
 .certifications #certificationsCarousel .carousel-control-prev-icon,
 .certifications #certificationsCarousel .carousel-control-next-icon {
@@ -11059,13 +11060,16 @@ header.top {
 .certifications #certificationsCarousel .carousel-caption {
   left: 0;
   right: 0;
-  bottom: -34px;
+  bottom: -24px;
   width: 100%;
 }
 .certifications #certificationsCarousel .carousel-caption h5, .certifications #certificationsCarousel .carousel-caption .h5 {
   font-size: 2vw;
   font-family: GalaxiePolarisBold;
   color: #ff7800;
+}
+.certifications #certificationsCarousel .carousel-caption h5.type2, .certifications #certificationsCarousel .carousel-caption .type2.h5 {
+  font-size: 20px;
 }
 @media screen and (max-width: 1366px) {
   .certifications #certificationsCarousel .carousel-caption {
